@@ -62,6 +62,7 @@ class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManag
             print(data.temperatureString)
             self.temperatureLabel.text = data.temperatureString
             self.cityLabel.text = data.cityname
+            self.conditionImageView.image = UIImage(systemName: data.conditionName)
             print("well done")
         }
     }
